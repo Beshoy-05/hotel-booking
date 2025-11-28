@@ -2,8 +2,8 @@
 import axios from "axios";
 
 // ✅ نستخدم /api فقط لأن الـ Proxy في Vite هيتولى الباقي
-const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5173/api";
+const API_BASE_URL = "/api/proxy";
+
 
 // 1. توحيد الاسم: نستخدم API (كابيتال) في كل مكان
 const API = axios.create({
